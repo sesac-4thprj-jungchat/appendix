@@ -1,32 +1,20 @@
 <<<<<<< HEAD
 # appendix
 =======
-# final_project
->>>>>>> 메인 만들었음 브런치 파서 넣어주시면 됩니다.
-# ‼️💡 Commit Convention
-`Feat`	새로운 기능을 추가
+1.Crawling
+OPENAPI API KEY 부분은 돌려볼려면 API 발급받고 키 값 .env 파일 만들어서 새로 집어넣어야됨
+블로그 크롤링은 주기적으로 네이버에서 형식을 바꿔서, 프로젝트 당시에는 작동했던 코드 제대로 안 돌아갈 수 있음
 
-`Fix`	버그 수정
+2.Preprocessing
+프로젝트에서는 GEMINI로 진행을 했는데, API 발급받고 키 값을 .env 파일 만들어서 새로 집어넣어야됨. API 불러오는 부분만 바꾼다면 다른 LLM API를 써도 돌아갈 것
 
-`Design`	CSS 등 사용자 UI 디자인 변경
+3.Training + Eval
+Text2SQL에 쓸 LLM fine tuning 할 때 썻던 코드. 돌려볼려면 GPU 리소스 필요함. 그리고 프로젝트에선 튜닝한 모델 Huggingface에 올리는게 편해서 허깅페이스에 업로드 까지 진행했지만 LLM을 로컬로 돌리거나 다른 곳에 파일 옮길 필요가 없다면 저 부분은 생략해도 무방. 
 
-`!BREAKING CHANGE`	커다란 API 변경의 경우
-
-`!HOTFIX`	급하게 치명적인 버그를 고쳐야하는 경우
-
-`Style`	코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우
-
-`Refactor`	프로덕션 코드 리팩토링
-
-`Comment`	필요한 주석 추가 및 변경
-
-`Docs`	문서 수정
-
-`Test`	테스트 코드, 리펙토링 테스트 코드 추가, Production Code(실제로 사용하는 코드) 변경 없음
-
-`Chore`	빌드 업무 수정, 패키지 매니저 수정, 패키지 관리자 구성 등 업데이트, Production Code 변경 없음
-
-`Rename`	파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우
-
-`Remove`	파일을 삭제하는 작업만 수행한 경우
-
+4. VLLM
+pip install vllm
+이 명령어로 vllm을 깔아주고, llm 모델이 로컬에 있다면 
+python -m vllm.entrypoints.api_server --model /llm모델 위치 --port 원하는 포트 번호
+llm 모델이 허깅페이스에 있다면 
+python -m vllm.entrypoints.api_server --model 허깅페이스 모델 주소 --port 원하는 포트 번호
+커맨드로 실행시키면 된다. 
