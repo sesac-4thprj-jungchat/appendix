@@ -1,9 +1,25 @@
-<<<<<<< HEAD
-# appendix
-=======
-# final_project
->>>>>>> 메인 만들었음 브런치 파서 넣어주시면 됩니다.
-# ‼️💡 Commit Convention
+# Fundit
+펀딧은 다양한 보조금 정보를 한 곳에 모아 사용자에게 제공하고,
+
+보조금 신청 과정을 간소화하여 빠르고 쉽게 지원을 받을 수 있도록
+필요한 도움을 실시간으로 제공합니다. 
+
+![image](https://github.com/user-attachments/assets/56ee5772-8d1b-4e1d-b08d-a1d97967b4fd)
+
+![image](https://github.com/user-attachments/assets/e3b6abeb-0fae-4d3b-9988-eda0de04593b)
+
+
+### repo
+📁 appendix - EDA, prompt
+
+📁 local - web(react, fastapi)
+
+📁 aws - server 구동
+
+### team
+![SeSAC_final_project](https://github.com/user-attachments/assets/415c0144-fb58-42b2-a208-909f3dac5ae9)
+
+#### ‼️💡 Commit Convention
 `Feat`	새로운 기능을 추가
 
 `Fix`	버그 수정
