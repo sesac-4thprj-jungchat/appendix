@@ -1,15 +1,36 @@
-<<<<<<< HEAD
-# appendix
-<<<<<<< HEAD
-이름바꾸고 Chunking+테스트했던 파일들 정리해서올림
-=======
-# final_project
->>>>>>> 
-=======
-=======
-# final_project
->>>>>>> f9b0858faca7fb844aedaa50daec7a5ca470c794
-# ‼️💡 Commit Convention
+# Fundit
+펀딧은 다양한 보조금 정보를 한 곳에 모아 사용자에게 제공하고,
+
+보조금 신청 과정을 간소화하여 빠르고 쉽게 지원을 받을 수 있도록
+필요한 도움을 실시간으로 제공합니다. 
+
+![image](https://github.com/user-attachments/assets/56ee5772-8d1b-4e1d-b08d-a1d97967b4fd)
+
+![image](https://github.com/user-attachments/assets/e3b6abeb-0fae-4d3b-9988-eda0de04593b)
+
+## 회원가입 / 로그인
+![auth](https://github.com/user-attachments/assets/afabecd4-4a73-477f-809e-564d4ea6af7e)
+
+## 진입화면
+![info](https://github.com/user-attachments/assets/cde6eb64-af5c-46e4-98f7-7c02ba3771bd)
+
+
+## 채팅화면
+![chatting](https://github.com/user-attachments/assets/74b048aa-f866-4c0d-bfe6-d76ddff98671)
+
+
+
+### repo
+📁 appendix - EDA, prompt
+
+📁 local - web(react, fastapi)
+
+📁 src_aws_eks_iac_cicd
+
+### team
+![SeSAC_final_project](https://github.com/user-attachments/assets/415c0144-fb58-42b2-a208-909f3dac5ae9)
+
+#### ‼️💡 Commit Convention
 `Feat`	새로운 기능을 추가
 
 `Fix`	버그 수정
