@@ -1,8 +1,8 @@
+# test
 import os
 import json
 import traceback
 from dotenv import load_dotenv
-
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.docstore.document import Document
@@ -12,13 +12,11 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.retrievers.document_compressors.base import BaseDocumentCompressor
-
 import torch
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer, pipeline
 from auto_gptq import AutoGPTQForCausalLM
 from sentence_transformers import CrossEncoder
-
 from langchain.llms.base import LLM
 from pydantic import PrivateAttr, Field
 
