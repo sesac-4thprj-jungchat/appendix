@@ -1,32 +1,31 @@
-<<<<<<< HEAD
-# appendix
-=======
-# final_project
->>>>>>> 메인 만들었음 브런치 파서 넣어주시면 됩니다.
-# ‼️💡 Commit Convention
-`Feat`	새로운 기능을 추가
+# appendix - Data Preprocessing
 
-`Fix`	버그 수정
+이 폴더는 Fundit 프로젝트의 **정책 데이터 전처리 Python 스크립트**를 포함합니다.  
+특히 `data_process1/` 디렉토리는 정책 관련 데이터를 AI 챗봇이 이해하기 쉽도록 정제하고 분류하는 데 목적이 있습니다.
 
-`Design`	CSS 등 사용자 UI 디자인 변경
+---
 
-`!BREAKING CHANGE`	커다란 API 변경의 경우
+## 📁 폴더 구조
 
-`!HOTFIX`	급하게 치명적인 버그를 고쳐야하는 경우
+> ❗ 참고: 위 파일들 외에도 다양한 전처리 스크립트가 있었지만,  
+> 본 프로젝트에는 **핵심 기능 구현에 필요한 코드만 엄선하여 포함**했습니다.
 
-`Style`	코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우
+---
 
-`Refactor`	프로덕션 코드 리팩토링
+## 📄 주요 스크립트 설명
 
-`Comment`	필요한 주석 추가 및 변경
+| 파일명 | 설명 |
+|--------|------|
+| `0-1.dp_area8780_...py` | 정책 데이터를 행정구역 기준으로 분류합니다. |
+| `0-2.dp_support.py` | 지원 항목(현금, 바우처 등)을 기준으로 분류합니다. |
+| `0-3.dp_application_method.py` | 신청 방법을 온라인/방문 등으로 분류합니다. |
+| `0-4.dp_benefit_multi_cate.py` | 수혜 기준을 여러 조건으로 다중 분류 처리합니다. |
 
-`Docs`	문서 수정
+---
 
-`Test`	테스트 코드, 리펙토링 테스트 코드 추가, Production Code(실제로 사용하는 코드) 변경 없음
+## ▶ 실행 방법
 
-`Chore`	빌드 업무 수정, 패키지 매니저 수정, 패키지 관리자 구성 등 업데이트, Production Code 변경 없음
-
-`Rename`	파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우
-
-`Remove`	파일을 삭제하는 작업만 수행한 경우
-
+```bash
+# 예: 수혜 기준 분류 실행
+cd appendix/data_process1
+python 0-4.dp_benefit_multi_cate.py
