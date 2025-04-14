@@ -1,0 +1,2 @@
+python -m vllm.entrypoints.api_server --model /home/elicer/vllm/dragonkue --port 8002 
+python -m vllm.entrypoints.api_server --model /home/elicer/vllm/full_finetuned_model --port 8001
