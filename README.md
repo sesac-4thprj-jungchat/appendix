@@ -27,6 +27,8 @@
 
 📁 src_aws_eks_iac_cicd
 
+📁 retrival_test - rag 성능 test
+
 ### team
 ![SeSAC_final_project](https://github.com/user-attachments/assets/415c0144-fb58-42b2-a208-909f3dac5ae9)
 
